@@ -1,0 +1,29 @@
+Clauer keeps safe your keys, password and secrets and It knows how to shows you one entry when you required
+
+It has two scenaries
+  showroom
+  safe
+
+
+In saferoom  You should fill a form with the follow fields:
+
+   name:
+   don´t forget(key, password, secret):
+   tag:
+
+In the showroom you only needs:
+
+   Clauer ask you for your pin the only number you need to remember 
+   You should identify:
+    pin: Alphanumeric text
+   
+   Then clauer shows you:
+    "What key do you forget it:"
+     Clauer shows you a box for introduce the name of that you are looking for and a button for press when you are ready for search.
+      
+   and clauer should you your key:
+      "dsadakdjskdi2sa"
+
+
+ Thats it!
+
