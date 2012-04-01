@@ -48,8 +48,8 @@ Keystone::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'keys#index'
-
+   root :to => 'home#index'
+   resources :keyrepos
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

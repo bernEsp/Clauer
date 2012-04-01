@@ -4,6 +4,24 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+//= require_self 
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require backbone/json2
+//= require backbone/underscore
+//= require backbone/backbone
+//= require_tree . 
+//= require keybone/models/keyrepo     
+//= require keybone/controllers/keyrepos
+//= require keybone/views/edit
+//= require keybone/views/index 
+ 
+var App = {
+  Views: {},
+  Controllers: {},
+  Models: {},
+  init: function(){
+    App.Controllers.Keyrepos = new KeyRepos();
+    Backbone.history.start();
+  }
+};
