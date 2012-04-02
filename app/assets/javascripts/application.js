@@ -11,7 +11,8 @@
 //= require backbone/underscore
 //= require backbone/backbone
 //= require_tree . 
-//= require keybone/models/keyrepo     
+//= require keybone/models/keyrepo 
+//= require keybone/collections/keys     
 //= require keybone/controllers/keyrepos
 //= require keybone/views/edit
 //= require keybone/views/index 

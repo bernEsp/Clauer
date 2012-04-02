@@ -17,13 +17,14 @@ class window.KeyRepos extends Backbone.Router
     }) 
   ,
   index: () ->
-    $.getJSON('/keyrepos', (data) ->
-      if data
-        keys = _.map(data, (key) -> new Keyrepo(key) )
-        new Index({ keys: keys })
-      else
-        new Error({ message: "Error loading documents." })
-    )  
+    keys = new Keys({ model: Keyrepo })
+    keys.fetch({
+      success: () ->
+        new Index({ collection: keys })
+      ,
+      error: () ->
+        new Error({ message: "Error loading documents." })     
+    })
   ,       
   newkeyrepo: () -> 
     new Form({ model: new Keyrepo() })    
